@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> Portfolio </a>
+
+            <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
+                <span class="icon-user"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#PabloPorta"> Sobre mí </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Trabajos"> Trabajos </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contacto"> Contacto </a>
+                    </li>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="container col-lg-2">
+
+        <a href="IMG/IMG7.jpg"><img
+        class="img-fluid" src="IMG/IMG7.jpg" alt="IMG PORTADA"></a>
+
+    </div>
+
+    <div id="títulos" class="container col-lg-3">
+
+        <h1 id="PabloPorta"> Pablo Porta </h1>
+
+        <h2> Diseñador Integral </h2>
+
+    </div>
+
+    <div id="texto" class="container col-lg-9">
+
+        <p> Hola, bienvenidos a mi portfolio. Soy estudiante de una carrera de diseño innovadora que retoma conceptos fundamentales de la historia del diseño, para aplicarlos e insertarlos en las nuevas tecnologías y costumbres del mundo contemporáneo. </p>
+
+    </div>
+
+    <div id="Trabajos" class="row justify-content-md-between justify-content-lg-between">
+
+        <div class="col-md-5 col-lg-4">
+            <a href="IMG/IMG1.jpg" data-lightbox="image-set" data-title="Manipulación mental"><img class="img-fluid img-thumbnail"
+            src="IMG/IMG1.jpg" alt="Manipulación mental"></a>
+        </div>
+
+        <div class="col-md-5 col-lg-4"> 
+            <video loop muted autoplay src="IMG/VIDEO WEB.mp4" class="img-fluid" id="video" width="500"></video>
+        </div>
+
+        <div class="col-md-5 col-lg-4">
+            <a href="IMG/IMG3.jpg" data-lightbox="image-set" data-title="Flow de Barrio"><img class="img-fluid img-thumbnail"
+            src="IMG/IMG3.jpg" alt="Flow de Barrio"></a>
+        </div>
+
+        <div class="col-md-5 col-lg-4">
+            <a href="IMG/IMG4.jpg" data-lightbox="image-set" data-title="Pinky Camera"><img class="img-fluid img-thumbnail"
+            src="IMG/IMG4.jpg" alt="Pinky Camera"></a>
+        </div>
+
+        <div class="col-md-5 col-lg-4">
+            <a href="IMG/IMG2.jpg" data-lightbox="image-set" data-title="Smoking Bullshit"><img class="img-fluid img-thumbnail"
+            src="IMG/IMG2.jpg" alt="Smoking Bullshita"></a>
+        </div>
+
+        <div class="col-md-5 col-lg-4">
+            <a href="IMG/IMG6.jpg" data-lightbox="image-set" data-title="Childish Gambino"><img class="img-fluid img-thumbnail"
+            src="IMG/IMG6.jpg" alt="Childish Gambino"></a>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="container form">
+
+        <h3 id="Contacto">Contacto</h3>
+
+        <form action="php/code.php"  method="post">
+
+            <label class="col-12"> Nombre y apellido <input name="Nombre y apellido" placeholder="Ingrese aquí su nombre y apellido" type="text" required></label>
+    
+            <label class="col-12"> Correo electrónico <input name="Correo electrónico" type="Correo electrónico" required placeholder="Ingrese aquí su correo electrónico"></label>
+    
+            <label class="col-12"> Comentarios </label>
+
+            <textarea name="Comentarios" required placeholder="Ingrese aquí un comentario"></textarea>
+
+            <div>
+                <button  id="Button" class="col-12"> Enviar </button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
